@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
+import WhyUs from '../components/WhyUs.astro'
+import Services from '../components/Services.astro'
+import BrandUs from '../components/BrandUs.astro'
+import Contact from '../components/Contact.astro'
+import Steps from '../components/Steps.astro'
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title='SamRank - Your SEO ranking agency to stand out' description='Boost your website visibility with SamRank, the premier SEO agency delivering data-driven strategies and proven results. Get found online and outrank your competitors.'>
+	<Hero />
+	<WhyUs />
+	<Contact />
+	<Services />
+	<BrandUs />
+	<Steps />
 </Layout>

@@ -1,0 +1,91 @@
+---
+// Steps.astro
+---
+
+<section id="steps" class="relative w-full mx-auto px-4 md:px-8 lg:px-32 py-16 md:py-32">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 -z-10">
+        <div class="absolute top-40 right-0 w-72 md:w-96 h-72 md:h-96 bg-accentColor/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-20 w-52 md:w-72 h-52 md:h-72 bg-accentColor/60 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Section Header -->
+    <div class="mb-12 md:mb-20 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">You Bring the Ambition, We Drive the Results</h2>
+        <p class="text-xl md:text-2xl text-gray-400 mb-4">FREE!</p>
+        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto">
+            Request a free review today. We'll send you a video review of your website and marketing, breaking down your next steps to success.
+        </p>
+        <div class="w-16 md:w-20 h-1 bg-accentColor rounded-full mx-auto mt-6"></div>
+    </div>
+
+    <!-- Steps Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 relative">
+        <!-- Connecting Lines (visible on md+ screens) -->
+        <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-accentColor/30 -translate-y-1/2 z-0"></div>
+        
+        <!-- Step 01 -->
+        <div class="relative group">
+            <div class="p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gray-900/50 backdrop-blur-sm border border-gray-800 
+                        hover:border-accentColor/50 transition-all duration-300 relative z-10">
+                <div class="bg-accentColor/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <p class="text-accentColor font-mono text-xl">01</p>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Hit the Button</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Click "review my website" and share some basic information about your business to get started.
+                </p>
+            </div>
+            <!-- Arrow (visible on md+ screens) -->
+            <div class="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-accentColor z-20">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="relative group">
+            <div class="p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gray-900/50 backdrop-blur-sm border border-gray-800 
+                        hover:border-accentColor/50 transition-all duration-300 relative z-10">
+                <div class="bg-accentColor/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <p class="text-accentColor font-mono text-xl">02</p>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-3">We Analyze</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Our Marketing Ninjas will thoroughly analyze your website and uncover your path to success.
+                </p>
+            </div>
+            <!-- Arrow (visible on md+ screens) -->
+            <div class="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-accentColor z-20">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="relative group">
+            <div class="p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gray-900/50 backdrop-blur-sm border border-gray-800 
+                        hover:border-accentColor/50 transition-all duration-300 relative z-10">
+                <div class="bg-accentColor/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                    <p class="text-accentColor font-mono text-xl">03</p>
+                </div>
+                <h3 class="text-xl md:text-2xl font-bold text-white mb-3">Video Review</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    We'll send a detailed video review to your inbox faster than you can say "shinobi!"
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="mt-12 md:mt-16 text-center">
+        <a href="/#contact">
+        <button class="bg-accentColor hover:bg-accentColor/80 text-black font-bold py-3 px-8 rounded-full 
+                       transition-all duration-300 transform hover:scale-105">
+            Review My Website
+        </button>
+    </a>
+    </div>
+</section>
